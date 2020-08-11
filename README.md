@@ -60,13 +60,97 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper{
 ### Restful
 
 ```
-Ejemplo 2
+    public void Registrar(View view){
+        AdminSQLiteOpenHelper admin=new AdminSQLiteOpenHelper(this,"administracion",null,1);
+
+        SQLiteDatabase BaseDeDatos =admin.getWritableDatabase();
+
+        String codigo=et_codigo.getText().toString();
+        String especialidad=et_especialidad.getText().toString();
+        String doctor=et_doctor.getText().toString();
+        String descripcion = et_descripcion.getText().toString();
+        String fecha = et_fecha.getText().toString();
+
+        if(!codigo.isEmpty() && !especialidad.isEmpty()  &&!doctor.isEmpty() && !descripcion.isEmpty()&& !fecha.isEmpty()){
+            ContentValues registro =new ContentValues();
+
+            registro.put("codigo",codigo);
+            registro.put("especialidad",especialidad);
+            registro.put("doctor",doctor);
+            registro.put("problema",descripcion);
+            registro.put("fecha",fecha);
+
+            BaseDeDatos.insert("cita",null,registro);
+
+            BaseDeDatos.close();
+            et_codigo.setText("");
+            et_especialidad.setText("");
+            et_doctor.setText("");
+            et_descripcion.setText("");
+            et_fecha.setText("");
+
+            Toast.makeText(this,"Registro Exitoso",Toast.LENGTH_SHORT).show();
+
+        } else {
+            Toast.makeText(this,"Debes llenar todos los campos",Toast.LENGTH_SHORT).show();
+        }
+
+    }
+
+
+    public void Buscar(View view){
+
+        AdminSQLiteOpenHelper admi=new AdminSQLiteOpenHelper(this,"administracion",null,1);
+        SQLiteDatabase BaseDeDatabase=admi.getWritableDatabase();
+
+        String codigo=et_codigo.getText().toString();
+
+        if(!codigo.isEmpty()){
+            Cursor fila=BaseDeDatabase.rawQuery("select especialidad,doctor,problema,fecha from articulos where codigo ="+codigo,null);
+            if(fila.moveToFirst()){
+                et_especialidad.setText(fila.getString(0));
+                et_doctor.setText(fila.getString(1));
+                et_descripcion.setText(fila.getString(2));
+                et_fecha.setText(fila.getString(3));
+                BaseDeDatabase.close();
+            }else{
+                Toast.makeText(this,"No existe el registro",Toast.LENGTH_SHORT).show();
+                BaseDeDatabase.close();
+            }
+        }else{
+            Toast.makeText(this,"Debes introducir tu codigo",Toast.LENGTH_SHORT).show();
+        }
+
+    }
 ```
 
 ### Persistent Tables
 
 ```
-Ejemplo 3
+    public void Buscar(View view){
+
+        AdminSQLiteOpenHelper admi=new AdminSQLiteOpenHelper(this,"administracion",null,1);
+        SQLiteDatabase BaseDeDatabase=admi.getWritableDatabase();
+
+        String codigo=meetcita.getText().toString();
+
+        if(!codigo.isEmpty()){
+            Cursor fila=BaseDeDatabase.rawQuery("select especialidad,doctor,problema,fecha from articulos where codigo ="+codigo,null);
+            if(fila.moveToFirst()){
+                et_especialidad.setText(fila.getString(0));
+                et_doctor.setText(fila.getString(1));
+                et_descripcion.setText(fila.getString(2));
+                et_fecha.setText(fila.getString(3));
+                BaseDeDatabase.close();
+            }else{
+                Toast.makeText(this,"No existe el registro",Toast.LENGTH_SHORT).show();
+                BaseDeDatabase.close();
+            }
+        }else{
+            Toast.makeText(this,"Debes introducir tu codigo",Toast.LENGTH_SHORT).show();
+        }
+
+    }
 ```
 
 ### Principios SOLID usados ⌨️
@@ -76,13 +160,49 @@ Los ejemplos de principios SOLID usados son:
 ### Responsabilidad Unica
 
 ```
-Ejemplo 1
+public class AdminSQLiteOpenHelper extends SQLiteOpenHelper{
+
+
+    public AdminSQLiteOpenHelper(Context context, String name,SQLiteDatabase.CursorFactory factory, int version) {
+        super(context, name, factory, version);
+    }
+
+    @Override
+    public void onCreate(SQLiteDatabase BaseDeDatos) {
+        BaseDeDatos.execSQL("create table articulos(codigo int primary key, descripcion text, precio real)");
+        BaseDeDatos.execSQL("create table receta(codigo int primary key, costo real, medicamento string)");
+        BaseDeDatos.execSQL("create table cita(codigo int primary key, especialidad string,doctor string,problema string,fecha string)");
+    }
+
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+
+    }
+}
 ```
 
 ### Abierto Cerrado
 
 ```
-Ejemplo 2
+public class AdminSQLiteOpenHelper extends SQLiteOpenHelper{
+
+
+    public AdminSQLiteOpenHelper(Context context, String name,SQLiteDatabase.CursorFactory factory, int version) {
+        super(context, name, factory, version);
+    }
+
+    @Override
+    public void onCreate(SQLiteDatabase BaseDeDatos) {
+        BaseDeDatos.execSQL("create table articulos(codigo int primary key, descripcion text, precio real)");
+        BaseDeDatos.execSQL("create table receta(codigo int primary key, costo real, medicamento string)");
+        BaseDeDatos.execSQL("create table cita(codigo int primary key, especialidad string,doctor string,problema string,fecha string)");
+    }
+
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+
+    }
+}
 ```
 
 ### Sustituible
@@ -207,7 +327,25 @@ public class Opciones extends AppCompatActivity
 ### Inversion de dependencias
 
 ```
-Ejemplo 3
+public class Opciones extends AppCompatActivity
+        implements NavigationView.OnNavigationItemSelectedListener {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_opciones);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
+        navigationView.setNavigationItemSelectedListener(this);
+    }
 ```
 
 ## Construido con 🛠️

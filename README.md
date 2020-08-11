@@ -208,7 +208,42 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper{
 ### Sustituible
 
 ```
-Ejemplo 3
+public void Registrar(View view){
+        AdminSQLiteOpenHelper admin=new AdminSQLiteOpenHelper(this,"administracion",null,1);
+
+        SQLiteDatabase BaseDeDatos =admin.getWritableDatabase();
+
+        String codigo=et_codigo.getText().toString();
+        String especialidad=et_especialidad.getText().toString();
+        String doctor=et_doctor.getText().toString();
+        String descripcion = et_descripcion.getText().toString();
+        String fecha = et_fecha.getText().toString();
+
+        if(!codigo.isEmpty() && !especialidad.isEmpty()  &&!doctor.isEmpty() && !descripcion.isEmpty()&& !fecha.isEmpty()){
+            ContentValues registro =new ContentValues();
+
+            registro.put("codigo",codigo);
+            registro.put("especialidad",especialidad);
+            registro.put("doctor",doctor);
+            registro.put("problema",descripcion);
+            registro.put("fecha",fecha);
+
+            BaseDeDatos.insert("cita",null,registro);
+
+            BaseDeDatos.close();
+            et_codigo.setText("");
+            et_especialidad.setText("");
+            et_doctor.setText("");
+            et_descripcion.setText("");
+            et_fecha.setText("");
+
+            Toast.makeText(this,"Registro Exitoso",Toast.LENGTH_SHORT).show();
+
+        } else {
+            Toast.makeText(this,"Debes llenar todos los campos",Toast.LENGTH_SHORT).show();
+        }
+
+    }
 ```
 
 ### Interfaz Especifica

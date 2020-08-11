@@ -164,6 +164,8 @@ Los ejemplos de principios SOLID usados son:
 
 ### Responsabilidad Unica
 
+Cada objeto y cada activity solo hacen su trabajo y no pueden relacionarse con las otras, se relacionan solo mediante el paso de parametros o el cambio de activity. 
+
 ```
 public class AdminSQLiteOpenHelper extends SQLiteOpenHelper{
 
@@ -188,6 +190,8 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper{
 
 ### Abierto Cerrado
 
+Se ve como Android Studio te obliga a sobre escribir los metodos dados por herencia, de esta manera uno tampoco puede cambiar las clases padres, por ello estamos obligados a extender funcionalidades.
+
 ```
 public class AdminSQLiteOpenHelper extends SQLiteOpenHelper{
 
@@ -211,6 +215,8 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper{
 ```
 
 ### Sustituible
+
+Cualquier objeto de esta clase puede manipular la base de datos y puede hacer las consultas que se pidan.
 
 ```
 public void Registrar(View view){
@@ -252,6 +258,8 @@ public void Registrar(View view){
 ```
 
 ### Interfaz Especifica
+
+Se utiliza una interfaz distinta para cada una de las actividades y no una sola, como se puede ver en el codigo siguiente de la activity que direcciona a las demas.
 
 ```
 public class Opciones extends AppCompatActivity
@@ -365,6 +373,9 @@ public class Opciones extends AppCompatActivity
 ```
 
 ### Inversion de dependencias
+
+Los botones del proyecto y de las activitis dependen de la sobre escritura de metodos, si no se realiza esta misma o se deja en blanco el boton sigue funcionando
+pero no realiza ninguna tarea.
 
 ```
 public class Opciones extends AppCompatActivity

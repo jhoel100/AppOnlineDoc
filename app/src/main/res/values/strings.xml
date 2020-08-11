@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Online Doc </string>
+    <string name="txt_codigo">Codigo del Producto</string>
+    <string name="txt_descripcion">Descripcion del Producto</string>
+    <string name="txt_precio">Precio del Producto</string>
+    <string name="BotonRegistrar">Registrar</string>
+    <string name="Boton_Buscar">Buscar</string>
+    <string name="Boton_Eliminar">Eliminar</string>
+    <string name="BotonModificar">Modificar</string>
+    <string name="title_activity_modelador">Atencion de Clientes: </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">App Online Doc</string>
+    <string name="nav_header_subtitle">onlinedoc_app@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Ajustes</string>
+
+    <string name="menu_home">Videos</string>
+    <string name="menu_gallery">Fotografias</string>
+    <string name="menu_slideshow">Manual</string>
+    <string name="menu_tools">Ajustes</string>
+    <string name="menu_share">Compartir</string>
+    <string name="menu_send">Acerca de la Aplicacion</string>
+    <string name="title_activity_editor">Entrada a Google Meet</string>
+    <string name="title_activity_videos">Videos</string>
+    <string name="title_activity_fotografias">Fotografias</string>
+    <string name="title_activity_manual">Manual</string>
+    <string name="title_activity_ajustes">Ajustes</string>
+    <string name="title_activity_compartir">Compartir</string>
+    <string name="title_activity_paint">Paint</string>
+    <string name="title_activity_musica">Musica</string>
+    <string name="title_activity_iniciar_meet">IniciarMeet</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_farmacia">Farmacia</string>
+    <string name="title_activity_referencias">Referencias</string>
+
+</resources>

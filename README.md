@@ -59,6 +59,8 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper{
 
 ### Restful
 
+Se espera una comunicacion entre la app, con la parte logica de la aplicacion, la cual envia las consultas al servidor, el mismo tiene la base de datos, con ella manda las respuestas a la solicutud.
+
 ```
     public void Registrar(View view){
         AdminSQLiteOpenHelper admin=new AdminSQLiteOpenHelper(this,"administracion",null,1);
@@ -125,6 +127,9 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper{
 ```
 
 ### Persistent Tables
+
+Los objetos creados en una activity o que son partes de ella pueden ser llamados desde otra activity, esto no siempre es util o tiene sentido, pero ello nos
+habla de la clasificacion de objetos que se maneja en Android Studio.
 
 ```
     public void Buscar(View view){

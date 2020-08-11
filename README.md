@@ -15,7 +15,7 @@ tambien necesitaras la SDK completa de Android Studio, verifica haberla instalad
 
 La instalacion es simple:
 - Carga el proyecto en Android Studio, llendo a File - Open File or Project y seleccionando el archivo del proyecto, con icono de android
-- Si te hace falta alguna dependencia, android studio la descarga por ti atomaticamente.
+- Si te hace falta alguna dependencia, android studio la descarga por ti automaticamente.
 
 ## Ejecutando las pruebas ⚙️
 
@@ -28,15 +28,35 @@ el dispositivo como fuente de prueba.
 
 ### Estilos de programacion ⌨️
 
-_Explica que verifican estas pruebas y por qué_
+Los estilos de programacion usados son los siguientes:
 
 ```
-Da un ejemplo
+Ejemplo 1
 ```
 
-## Despliegue 📦
+```
+Ejemplo 2
+```
 
-_Agrega notas adicionales sobre como hacer deploy_
+```
+Ejemplo 3
+```
+
+### Principios SOLID usados ⌨️
+
+Los ejemplos de principios SOLID usados son:
+
+```
+Ejemplo 1
+```
+
+```
+Ejemplo 2
+```
+
+```
+Ejemplo 3
+```
 
 ## Construido con 🛠️
 
@@ -46,39 +66,24 @@ Android Studio usa lo siguiente para el manejo de dependencias:
 
 * [Gradle](https://gradle.org/) - Manejador de dependencias
 
-## Contribuyendo 🖇️
+## Version 📌
 
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+Esta es la version 1.00
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
+* **Jhoel Salomon Tapara Quispe** - *App Celular* - [jhoel100](https://github.com/jhoel100)
+* **Fulanito Detal** - *Pagina Web* - [fulanitodetal](#fulanito-de-tal)
+* **Fulanito Detal** - *Base de Datos y conecciones* - [fulanitodetal](#fulanito-de-tal)
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia [LICENSE.md](LICENSE.md) revisala para mas detalles
 
 ## Expresiones de Gratitud 🎁
 
 * Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
 * Da las gracias públicamente 🤓.
-* etc.
-
-
 
 ---
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
+⌨️ con ❤️ por [jhoel100](https://github.com/jhoel100) 😊

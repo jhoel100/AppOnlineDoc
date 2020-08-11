@@ -414,8 +414,8 @@ Esta es la version 1.00
 ## Autores ✒️
 
 * **Jhoel Salomon Tapara Quispe** - *App Celular* - [jhoel100](https://github.com/jhoel100)
-* **Fulanito Detal** - *Pagina Web* - [fulanitodetal](#fulanito-de-tal)
-* **Fulanito Detal** - *Base de Datos y conecciones* - [fulanitodetal](#fulanito-de-tal)
+* **Erick Estefano Gutierrez Enriquez** - *Pagina Web* - [erick-GeGe](https://github.com/erick-GeGe)
+* **Luis Felipe Vilzapaza** - *Base de Datos y conecciones* - [luisfe12](https://github.com/luisfe12)
 
 ## Licencia 📄
 

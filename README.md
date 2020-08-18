@@ -414,7 +414,25 @@ public class Opciones extends AppCompatActivity
 ```
 ## Principios DDD 📌
 
+## Definicion del Dominio 
 
+El dominio de la aplicacion de celular es toda una ciudad, para la cual se da cobertura del proyecto, en esta ciudad se puede atender y llamar a 
+los pacientes a que puedan ser atendidos, esta definido en el documento de requisitos y de arquitectura del proyecto, el punto donde estos dominios se juntan es
+el dominio de la base de datos, la cual es el punto de llegada y salida de todas las consultas de la aplicacion.
+
+## Layers del DDD
+
+Android studio nos separa el codigo en partes, desde su arbol de organizacion, estos ya estan formando capas, las cuales son:
+
+a) manifest: almacena la estructura de la aplicacion, asi como los nombres de las activitys que la conforman.
+b) java: almacena la parte logica del aplicativo, aca se definen todas las funcionalidades del proyecto.
+c) res: almacena los layout de la aplicacion, los cuales son varios xml que describen como esta armada nuestra interfaz, tambien tiene documentos que usaremos como imagenes.
+d) gradle scripts: cuenta con todos los documentos y dependencias necesarias para poder construir el aplicativo, en caso de no tener la dependencia, la descarga de internet.
+
+## Lenguaje comun
+
+Debido a que contamos con 3 desarrolladores de especialidades distintas, aplicacion de celular, pagina web y base de datos, se han nombrado y etiquetado las partes
+del modelo global para que todos podamos tener un lenguaje unificado y podamos implementar con los nombres respectivos.
 
 ## Construido con 🛠️
 

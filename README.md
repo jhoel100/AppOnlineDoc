@@ -434,6 +434,11 @@ d) gradle scripts: cuenta con todos los documentos y dependencias necesarias par
 Debido a que contamos con 3 desarrolladores de especialidades distintas, aplicacion de celular, pagina web y base de datos, se han nombrado y etiquetado las partes
 del modelo global para que todos podamos tener un lenguaje unificado y podamos implementar con los nombres respectivos.
 
+## Entidades
+
+La applicacion de android trabaja con varios activity, los cuales son nuestros objetos, tienen atributos distintos, pero cada una de las activities tienen funcionalidad
+distinta y una identidad propia en el modelo.
+
 ## Construido con 🛠️
 
 * [Android Studio](https://developer.android.com/studio) - Aplicacion

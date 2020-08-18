@@ -2,6 +2,20 @@
 
 Es una aplicacion mas directa y compacta en comparacion con la web, dado que buscamos ser mas rapidos y directos con la atencion por celular.
 
+## Proposito del Proyectp ⚙️
+
+El proposito del proyecto es crear una linea de medicos online que puedan ayudar a pacientes enfermos en todas sus ubicaciones y condiciones para la atencion.
+
+## Funcionalidades 📋
+
+Las funcionalidades de la app son las siguientes:
+
+-  Comunicacion usuario con la base de datos y los doctores en linea.
+-  Efectuar registros de citas, pagos y atenciones
+-  Guardar un control o historial de todas las atenciones que se tubo
+
+## Practicas de codigo legible 📋
+
 ## Comenzando 🚀
 
 Para iniciar puedes descargar el proyecto y ubicarlo en una carpeta de tu preferencia, solo necesitas descomprimirlo, nada mas.
@@ -398,6 +412,9 @@ public class Opciones extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 ```
+## Principios DDD 📌
+
+
 
 ## Construido con 🛠️
 

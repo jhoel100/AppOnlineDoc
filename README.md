@@ -441,8 +441,11 @@ el dominio de la base de datos, la cual es el punto de llegada y salida de todas
 Android studio nos separa el codigo en partes, desde su arbol de organizacion, estos ya estan formando capas, las cuales son:
 
 a) manifest: almacena la estructura de la aplicacion, asi como los nombres de las activitys que la conforman.
+
 b) java: almacena la parte logica del aplicativo, aca se definen todas las funcionalidades del proyecto.
+
 c) res: almacena los layout de la aplicacion, los cuales son varios xml que describen como esta armada nuestra interfaz, tambien tiene documentos que usaremos como imagenes.
+
 d) gradle scripts: cuenta con todos los documentos y dependencias necesarias para poder construir el aplicativo, en caso de no tener la dependencia, la descarga de internet.
 
 ## Lenguaje comun

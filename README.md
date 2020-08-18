@@ -6,6 +6,11 @@ Es una aplicacion mas directa y compacta en comparacion con la pagina web, dado 
 
 El proposito del proyecto es crear una linea de medicos online que puedan ayudar a pacientes enfermos en todas sus ubicaciones y condiciones.
 
+Partes del proyecto:
+
+- Pagina Web  Erick Gutiérrez Enríquez https://github.com/erick-GeGe/IS
+- Conecciones Base de Datos Luis Felipe Vilcapaza https://github.com/luisfe12/Ingenieria-de-Sofware
+
 ## Funcionalidades 📋
 
 Las funcionalidades de la app son las siguientes:

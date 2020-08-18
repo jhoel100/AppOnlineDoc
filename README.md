@@ -1,10 +1,10 @@
 # AppOnlineDoc para android
 
-Es una aplicacion mas directa y compacta en comparacion con la web, dado que buscamos ser mas rapidos y directos con la atencion por celular.
+Es una aplicacion mas directa y compacta en comparacion con la pagina web, dado que buscamos ser mas rapidos y directos con la atencion medica por celular.
 
-## Proposito del Proyectp ⚙️
+## Proposito del Proyecto ⚙️
 
-El proposito del proyecto es crear una linea de medicos online que puedan ayudar a pacientes enfermos en todas sus ubicaciones y condiciones para la atencion.
+El proposito del proyecto es crear una linea de medicos online que puedan ayudar a pacientes enfermos en todas sus ubicaciones y condiciones.
 
 ## Funcionalidades 📋
 
@@ -15,6 +15,16 @@ Las funcionalidades de la app son las siguientes:
 -  Guardar un control o historial de todas las atenciones que se tubo
 
 ## Practicas de codigo legible 📋
+
+- Comentar y Documentar: Se han comentado y explicado las funcionalidades de cada parte del codigo.
+- Espaciado Correspondiente: Se han usado las indentaciones aun cuando no son necesarias, esto para mantener legible el codigo.
+- Agrupado de Codigo: Se han usado la agrupacion que mantiene Android Studio al separar la interfaz, parte logica y manejo de dependencias.
+- DRY: no se estan repitiendo partes de codigo que ya fueron definidas.
+- Poca Anidacion: no se han usado anidaciones profundas, porque no fueron necesarias.
+- Organizacion de Archivos: Se ha mantenido una estructuracion definida en todo el proyecto.
+- Nombres Consistentes: Se ha tratado de expresar la funcionalidad de cada variable en su nombre asignado.
+- Capitalizacion de sentencias SQL: Se ha manejado las mayusculas en sentencias SQL de la base de datos.
+- Separado de datos y codigo: Se ha separado los datos del codigo, la base de datos se mantiene separada del codigo de la interfaz.
 
 ## Comenzando 🚀
 
@@ -30,6 +40,7 @@ tambien necesitaras la SDK completa de Android Studio, verifica haberla instalad
 La instalacion es simple:
 - Carga el proyecto en Android Studio, llendo a File - Open File or Project y seleccionando el archivo del proyecto, con icono de android
 - Si te hace falta alguna dependencia, android studio la descarga por ti automaticamente.
+- Construye la aplicacion y ya puedes correrla en cualquier dispositivo android
 
 ## Ejecutando las pruebas ⚙️
 
@@ -37,7 +48,7 @@ Para hacer pruebas de la aplicacion, vas a necesitar lo siguiente:
 - Un dispositivo android virtual o fisico
 
 Puedes usar los dispositivos virtuales que te da Android Studio, los cuales los instalas de manera sencilla con el AVD Manager
-Tambien puede usar tudispositivo fisico de preferencia, conectandolo con un cable USB, para que al correr la prueba selecciones 
+Tambien puede usar tu dispositivo fisico de preferencia, conectandolo con un cable USB, para que al correr la prueba selecciones 
 el dispositivo como fuente de prueba.
 
 ### Estilos de programacion ⌨️
